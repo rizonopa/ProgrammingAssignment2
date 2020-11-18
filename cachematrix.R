@@ -30,13 +30,13 @@
     #(and the matrix has not changed), 
     #then the cachesolve should retrieve the inverse from the cache.
     ## Return a matrix that is the inverse of 'x'
-    j <- x$getInverse()
-    if(!is.null(j)){
+    inver <- x$getInverse()
+    if(!is.null(inver)){
       message("getting cached data")
-      return(j)
+      return(inver)
     }
     mat <- x$get()
-    j <- solve(mat,...)
-    x$setInverse(j)
-    j
+    inver <- solve(mat,...)
+    x$setInverse(inver)
+    inver
   }
