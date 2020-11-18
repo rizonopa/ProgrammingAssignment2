@@ -3,7 +3,7 @@
 
 ## Write a short comment describing this function
 
-makeCacheMatrix <- function(x = matrix()) { #define the argument (x) as matrix
+makeCacheMatrix <- function(x = matrix()) { #define the argument (x)as matrix
   # This function creates a special "matrix" object that can cache
   #its inverse
   inver <- NULL #define inver as NULL to hold value of matrix inverse
