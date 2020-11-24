@@ -13,7 +13,7 @@ makeCacheMatrix <- function(x = matrix()) { #define the argument (x)as matrix
   }
   get <- function()x #define the get function
   setInverse <- function(inverse) inver <<- inverse #assigns value of inver 
-  getInverse <- function() j #gets the value of inver where called 
+  getInverse <- function() get #gets the value of inver where called 
   list(set = set, get = get,  #refer to the functions with the  $ operator 
        setInverse = setInverse, 
        getInverse = getInverse)
